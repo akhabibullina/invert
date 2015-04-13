@@ -6,12 +6,12 @@ var contrastIndex = 0;
 
 $(document).on('keypress', function() {
 	contrastIndex = +!contrastIndex;
-	$('body').invert('invert', contrastTypesEnum[contrastIndex]);
+	$('html').invert('invert', contrastTypesEnum[contrastIndex]);
 });
 
 $(document).ready(function() {
 
-	$("body").addClass("loaded");
+	$('body').addClass("loaded");
 
 	$(function () {
 		$('a[rel="lightbox"]').fluidbox();
